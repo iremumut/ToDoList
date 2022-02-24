@@ -1,0 +1,132 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: no-repeat center url("img-backgrnd.jpg");
+  font-weight: 400;
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: #fdf0d5;
+  padding: 10px 20px;
+  width: 400px;
+  min-height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 21px 0px #fdf0d5;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 800;
+  color: #fdf0d5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  box-sizing: border-box;
+  list-style: none;
+  background-color: #669bbc;
+  min-height: 50px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: #fdf0d5;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.task {
+  flex-grow: 3;
+  border: hidden;
+  background-color: #669bbc;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.icon {
+  margin: 0 3px;
+  justify-self: flex-end;
+}
+
+div[contenteditable].task:focus {
+  outline: none;
+}
+
+.hidden-edit {
+  width: 60px;
+  background: none;
+  border: solid 1px black;
+  padding: 6px 2px;
+  border-radius: 3px;
+  animation-duration: 10sn;
+  transition: background 0.5s;
+}
+
+.hidden-edit:hover {
+  background: black;
+  color: #fdf0d5;
+  border-radius: 3px;
+}
+
+.line-text {
+  color: black;
+  text-decoration: black line-through;
+  width: 50%;
+}
+
+.edit-div {
+  background-color: #fdf0d5;
+  color: black;
+  margin-right: 6px;
+  padding: 4px 6px;
+  border: solid 1px black;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-input {
+  width: 75%;
+  border: 3px solid #eb5e28;
+  border-radius: 3px;
+  background-color: #fdf0d5;
+  box-shadow: 0px 0px 8px 0px #eb5e28;
+  color: black;
+}
+
+.form-btn {
+  width: 80px;
+  border: solid 2px #eb5e28;
+  padding: 6px 2px;
+  border-radius: 3px;
+  height: 35px;
+  background-color: #fdf0d5;
+  color: black;
+  font-size: 1.1em;
+  animation-duration: 10sn;
+  transition: background 0.5s;
+}
+
+.form-btn:hover {
+  background-color: #eb5e28;
+  color: #fdf0d5;
+}
